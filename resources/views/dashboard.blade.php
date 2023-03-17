@@ -3,5 +3,5 @@
 @section('title', 'Dashboard')
  
 @section('content')
-    <p>Ini Dashboard</p>
+    <x-hero></x-hero>
 @endsection
