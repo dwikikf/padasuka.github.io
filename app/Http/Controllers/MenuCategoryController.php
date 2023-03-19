@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\MenuCategory;
 use Illuminate\Http\Request;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 class MenuCategoryController extends Controller
 {
@@ -12,7 +13,8 @@ class MenuCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $categories = MenuCategory::all();
+        return view('dashboard', compact('categories'));
     }
 
     /**

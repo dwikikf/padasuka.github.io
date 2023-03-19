@@ -1,43 +1,33 @@
-<nav>
-  <div class="navbar px-4 absolute z-10">
-    <div class="flex-1">
-      <a class="btn btn-ghost normal-case text-xl font-bold text-white" href="/">PadaSuka</a>
+<nav class="flex h-20 border-b-2 p-2 place-items-center">
+  <div id="nav-brand" class="mx-4 w-2/12">
+    <a href="/" class="font-semibold text-xl">Padasuka</a>
+  </div>
+  {{-- <div id="nav-icon" class="">
+    <a href="">a</a>
+    <a href="">a</a>
+    <a href="">a</a>
+    <a href="">a</a>
+    <a href="">a</a>
+    <a href="">a</a>
+    <a href="">a</a>
+  </div> --}}
+  <div id="nav-icon" class="mx-4 ">
+    <a href="">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon icon-sm hover:text-default">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
+      </svg>      
+    </a>
+  </div>
+  <div id="nav-user-set" class="flex-1 mx-4 flex flex-row-reverse gap-4 place-items-center">
+    <div>
+      <a href="">user</a>
     </div>
-    <div class="flex-none">
-      <div class="dropdown dropdown-end">
-        <label tabindex="0" class="btn btn-ghost btn-circle">
-          <div class="indicator text-white">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z" /></svg>
-            <span class="badge badge-sm indicator-item">8</span>
-          </div>
-        </label>
-        <div tabindex="0" class="mt-3 card card-compact dropdown-content w-52 bg-base-100 shadow">
-          <div class="card-body">
-            <span class="font-bold text-lg">8 Items</span>
-            <span class="text-info">Subtotal: $999</span>
-            <div class="card-actions">
-              <button class="btn btn-primary btn-block">View cart</button>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="dropdown dropdown-end">
-        <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-          <div class="w-10 rounded-full">
-            <img src="https://source.unsplash.com/random/300×300/?face" />
-          </div>
-        </label>
-        <ul tabindex="0" class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-52">
-          <li>
-            <a class="justify-between">
-              Profile
-              <span class="badge">New</span>
-            </a>
-          </li>
-          <li><a>Settings</a></li>
-          <li><a>Logout</a></li>
-        </ul>
-      </div>
+    <div>
+      <a href="" class="">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon icon-sm hover:text-default">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386l-1.591 1.591M21 12h-2.25m-.386 6.364l-1.591-1.591M12 18.75V21m-4.773-4.227l-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0z" />
+        </svg>
+      </a>
     </div>
   </div>
 </nav>

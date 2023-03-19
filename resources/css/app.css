@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .icon-sm {
+    @apply w-5 h-5;
+  }
+
+  .icon-md {
+    @apply w-7 h-7;
+  }
+
+  .icon:hover {
+    @apply transition-colors;
+  }
+
+  .shadow-full {
+    box-shadow: inset 2px 2px 2px 0 rgb(0 0 0 / 0.06),
+      inset -2px -2px 2px 0 rgb(0 0 0 / 0.06);
+  }
+
+  .card-dash-content {
+    @apply rounded-md shadow-full shadow-gr bg-white hover:shadow-lg hover:scale-105 h-40 transition-all duration-700;
+  }
+
+  .card-dash-accent {
+    content: "";
+    @apply w-11/12 rounded-md shadow-full bg-white shadow-gr h-6 m-auto relative -top-3 -z-50 group-hover:-translate-y-3 transition-transform duration-700;
+  }
+}

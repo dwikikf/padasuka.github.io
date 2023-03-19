@@ -10,10 +10,14 @@
   <title>Padasuka - @yield('title')</title>
 
 </head>
-<body>
+<body class="bg-base">
   @include('layouts.navbar')
   
-  @yield('content')
+  <div class="">
+    {{-- @include('layouts.sidebar') --}}
+
+    @yield('content')
+  </div>
 
   @include('layouts.footer')
 
